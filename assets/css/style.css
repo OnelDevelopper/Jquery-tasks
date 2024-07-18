@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 100vh;
+    max-width: 100%;
+    background: linear-gradient(135deg, lightblue, blue);
+}
+
+.app{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 500px;
+    background-color: #efefef;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px auto;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 370px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: inset 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+}
+
+form button{
+    height: 45px;
+    width: 60px;
+    line-height: 40px;
+    border: none;
+    background: linear-gradient(135deg, lightblue, blue);
+    color: white;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in-out 3ms;
+}
+form button:hover{
+    scale: 1.05;
+}
+
+.task-shower{
+    margin-top: 20px;
+}
+
+.task-shower ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.task-shower ul li span{
+    padding-left: 25px;
+    font-size: 0.9rem;
+}
+
+.checked{
+    position: absolute;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    left: 5px;
+}
+
+.unchecked{
+    position: absolute;
+    font-size: 1.2rem;
+    color: green;
+    cursor: pointer;
+    display: none;
+    left: 5px;
+
+}
+
+.edit{
+    position: absolute;
+    right: 65px;
+    border: none;
+    background-color: green;
+    height: 30px;
+    width: 55px;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.delete{
+    position: absolute;
+    right: 5px;
+    border: none;
+    background-color: red;
+    height: 30px;
+    width: 55px;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.accept{
+    position: absolute;
+    right: 65px;
+    border: none;
+    background-color: blue;
+    height: 30px;
+    width: 55px;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.input{
+    margin-left: 30px;
+    height: 30px;
+    width: 320px;
+    border: transparent;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 10px;
+}
